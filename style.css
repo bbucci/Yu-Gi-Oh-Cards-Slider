@@ -103,6 +103,7 @@ body {
     background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
     border: 2px solid #a67c52;
     text-align: left;
+    padding: 5px;
 }
 
 .card .info .description {
@@ -172,4 +173,21 @@ body {
 
 .btn-arrow:hover {
     background-color: #b6b0cc;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #c08057;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c08057;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c08057;
 }
