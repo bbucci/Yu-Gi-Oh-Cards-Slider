@@ -1,0 +1,175 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+/* CSS Reset */
+
+/* Font */
+@font-face {
+    font-family: 'Yugioh';
+    src: url(/fonts/fonte-yu-gi-oh.otf);
+}
+/* Font */
+
+body {
+    font-family: 'Yugioh', serif;
+    background-image: url(/img/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.top-txt {
+    display: flex;
+    justify-content: center;
+}
+
+.top-txt .title {
+    color: #f1ecff;
+}
+
+.card {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+}
+
+.card.selected {
+    opacity: 1;
+    z-index: 1;
+}
+
+.card-list {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.card .name {
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    border-radius: 4px;
+}
+
+.card .star {
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.card .card-level {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 3px;
+}
+
+.card .card-img {
+    max-width: 260px;
+    align-self: center;
+}
+
+.card .info {
+    border-radius: 5px;
+    max-width: 300px;
+    color: #000000;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    text-align: left;
+}
+
+.card .info .description {
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    max-height: 100px;
+    overflow-y: scroll;
+    font-size: 13px;
+}
+
+.card .info .atk-info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.card .info .atk-info span {
+    font-size: 13px;
+}
+
+.background-1 {
+    background: url(/img/fundo-1.jpg);
+}
+
+.background-2 {
+    background: url(/img/fundo-2.jpg);
+}
+
+.background-3 {
+    background: url(/img/fundo-3.jpg);
+}
+
+.background-4 {
+    background: url(/img/fundo-4.jpg);
+}
+
+.background-5 {
+    background: url(/img/fundo-5.jpg);
+}
+
+.background-6{
+    background: url(/img/fundo-6.jpg);
+}
+
+.background-7 {
+    background: url(/img/fundo-7.jpg);
+}
+
+.btn-arrow {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-arrow.btn-back {
+    transform: rotateY(180deg);
+}
+
+.btn-arrow:hover {
+    background-color: #b6b0cc;
+}
